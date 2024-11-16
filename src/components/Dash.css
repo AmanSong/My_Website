@@ -1,0 +1,21 @@
+.Dash-Header {
+    height: 5rem;
+    background: linear-gradient(135deg, #b12929, #da5f88, rgb(219, 135, 177));
+    position: sticky;
+    top: 0;
+}
+
+.Title {
+    height: 100%;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 5.25rem;
+    margin-left: 5%;
+}
+#my-name {
+    margin-left: 1%;
+}

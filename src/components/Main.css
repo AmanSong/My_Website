@@ -1,0 +1,20 @@
+.html, body {
+    background-color: rgb(37, 37, 37);
+}
+
+.Main-Page {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+}
+
+.About-Me-Section {
+    height: 100%;
+    width: 50%;
+    margin-top: 5rem;
+}
