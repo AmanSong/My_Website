@@ -4,20 +4,49 @@ const Main = () => {
 
     const aboutMe = (
         <div className="About-Me-Section">
-            <h1 style={{fontSize: 3 + 'em'}}>
-                Hello and Welcome
-            </h1>
-            Thank you for taking the time to visit my website, Please take a look at everything this site has to offer
-            <div className="about">
-                <div style={{marginBottom: 3 + 'em'}}></div>
-                <h2>What is this website about?</h2>
-                <div style={{marginBottom: .5 + 'em'}}></div>
-                This website will act as a portfolio for all the work and progress that I have accumulated throughout my journey, 
-                It will contain various information about myself and any projects that I may have completed in the future for not only
-                myself to look back and reflect on but to also showcase my skills to employers such as yourself.
-                <div style={{marginBottom: .5 + 'em'}}></div>
-                So wander around, have a look and maybe even learn a bit about me, then decide whether I am a good fit or not
+            <p style={{ fontSize: 3 + 'em' }}>
+                Wen Ting Song
+            </p>
+
+            <div style={{ marginTop: 1 + 'em' }}>
+                <p style={{ fontSize: 2 + 'em' }}>
+                    Hello, I'm a computer science graduate from TUD
+                </p>
+
+                <div style={{ marginTop: 1 + 'em' }}>
+                    <p>
+                        Good morning, even or afternoon to whoever is reading this, My name is Wen Ting Song but many of my friends
+                        call me Aman. So let me introduce myself a little, I am an aspiring Software Engineer that takes great interest
+                        in all things internet and technology.
+                    </p>
+                </div>
+
+                <div style={{ marginTop: 5 + 'em' }}>
+                    <h4>Why computer science?</h4>
+
+                    <p style={{ marginTop: 1 + 'em' }}>
+                        So why did I pursue a career in computer science? Well my biggest inspiration is video games and I'm sure it was
+                        the same for many other software developers, I enjoy video games such as Minecraft, Terraria, WOT and even Roblox.
+                        Playing these games made me wonder, what is going on behind the scenes and that spark of curiosity stayed with me
+                        even till this very day.
+                    </p>
+
+                    <p style={{ marginTop: 1.5 + 'em' }}>
+                        But thats not all, Perhaps one of the biggest inspirations for me was when I was watching YouTube videos and I came
+                        across several YouTubers such as "Michael Reeves" who used code to create wild and silly inventions which I found
+                        hilarious but also fascinating at the same time.
+                    </p>
+                </div>
+
+                <div style={{ marginTop: 3 + 'em' }}>
+                    <h4>A little about myself</h4>
+
+                    <p style={{ marginTop: 1 + 'em' }}>
+                        What kind of person am I? That is a kind of question that I'm not even sure
+                    </p>
+                </div>
             </div>
+
         </div>
     )
 

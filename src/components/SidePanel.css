@@ -1,6 +1,15 @@
-.Side-Panel {
-    width: 15rem;
-    height: 100%;
-    background-color: aliceblue; 
-    position: fixed;
+.SidePanel-Button {
+    height: 5rem;
+    margin: 5%;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+
+    &:hover {
+        color: #af1111;
+    }
 }

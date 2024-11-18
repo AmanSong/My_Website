@@ -1,0 +1,21 @@
+.Side-Panel {
+    width: 15rem;
+    height: 100%;
+    background: linear-gradient(135deg, #e69d9d, #da5f88, rgb(219, 135, 177));
+    position: fixed;
+    left: -15rem; 
+    transition: left 0.3s ease; 
+}
+
+.Side-Panel.open {
+    left: 0;
+}
+
+.content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.content.shifted {
+    margin-left: 10rem;
+}

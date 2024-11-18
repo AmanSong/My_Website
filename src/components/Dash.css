@@ -3,6 +3,7 @@
     background: linear-gradient(135deg, #b12929, #da5f88, rgb(219, 135, 177));
     position: sticky;
     top: 0;
+    color: white;
 }
 
 .Title {
@@ -10,6 +11,8 @@
     width: 25rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    user-select: none;
 }
 
 #logo {

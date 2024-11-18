@@ -1,16 +1,15 @@
+import React from 'react';
 import "./Dash.css"
 
-const Dash = () => {
-    const dashHeader = (
+const Dash = ({ toggleSidePanel }) => {
+    return (
         <div className="Dash-Header">
-            <div className="Title">
-                <img id="logo" src="My_Logo.png" alt="Logo"></img>
+            <div className="Title" onClick={toggleSidePanel}>
+                <img id="logo" src="My_Logo.png" alt="Logo" />
                 <h2 id="my-name">Wen Ting Song</h2>
             </div>
         </div>
-    )
-
-    return dashHeader
+    );
 }
 
-export default Dash
+export default Dash;
