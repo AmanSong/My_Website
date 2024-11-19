@@ -19,3 +19,10 @@
 .content.shifted {
     margin-left: 10rem;
 }
+
+@media only screen and (max-width: 1280px) {
+    .Side-Panel {
+        width: 10rem;
+        height: 100%;
+    }
+}

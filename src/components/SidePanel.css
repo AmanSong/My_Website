@@ -1,3 +1,8 @@
+.SidePanel {
+    font-size: 25px;
+    color: aliceblue;
+}
+
 .SidePanel-Button {
     height: 5rem;
     margin: 5%;
@@ -5,11 +10,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
     cursor: pointer;
-    color: white;
 
     &:hover {
         color: #af1111;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .SidePanel {
+        font-size: 20px;
     }
 }

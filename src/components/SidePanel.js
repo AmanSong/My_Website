@@ -16,7 +16,7 @@ const SidePanel = ({ className }) => {
     }
 
     const content = (
-        <div>
+        <div className="SidePanel">
             <div className="SidePanel-Button" onClick={() => Navigate("About")}>
                 ABOUT
             </div>
