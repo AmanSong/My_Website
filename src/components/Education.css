@@ -1,0 +1,41 @@
+.Education-Page {
+    color: white;
+}
+
+.Secondary-Section {
+    background-color: #ffdae725;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.Graduation-Images {
+    margin-top: 3rem;
+    background-color: #ffdae725;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Optional: Adds space between images */
+    justify-content: center;
+}
+
+.Graduation-Images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 1rem; /* Adds space between images */
+}
+
+#grad-image1 {
+    grid-column: span 2; /* Makes the first image span 2 columns */
+    grid-row: span 2; /* Makes the first image span 2 rows */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
+
+#grad-image2 {
+    grid-column: span 2;
+}
+
+.Graduation-Images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
