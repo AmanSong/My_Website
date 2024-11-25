@@ -13,10 +13,16 @@
     align-items: center;
     cursor: pointer;
     user-select: none;
+    background: linear-gradient(135deg, #b90000, #e633334f, #b1292900);
+
+    &:hover {
+        color: #d6d6d6;
+        background: linear-gradient(90deg, #e40000, #e63333be, #b1292900);
+    }
 }
 
 #logo {
-    height: 5.25rem;
+    height: 4rem;
     margin-left: 5%;
 }
 #my-name {

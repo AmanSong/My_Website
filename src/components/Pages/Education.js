@@ -5,12 +5,12 @@ const Education = () => {
         <div className="centered-div">
             <div className="About-Me-Section">
                 <p style={{ fontSize: 3 + 'em' }}>
-                    Education
+                    Education 
                 </p>
 
                 <div className="Secondary-Section" style={{ marginTop: 5 + 'em' }}>
                     <p style={{ fontSize: 2 + 'em' }}>
-                        Secondary School
+                        Secondary School 📖
                     </p>
                     <p style={{ fontSize: 1.25 + 'em' }}>
                         Moyle Park College - (2015-2020)
@@ -28,7 +28,7 @@ const Education = () => {
 
                 <div className="Secondary-Section" style={{ marginTop: 5 + 'em' }}>
                     <p style={{ fontSize: 2 + 'em' }}>
-                        College
+                        College 🎓
                     </p>
                     <p style={{ fontSize: 1.25 + 'em' }}>
                         Technological University Dublin - (2020-2024) <br></br>

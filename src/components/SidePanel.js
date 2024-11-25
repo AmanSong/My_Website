@@ -1,41 +1,42 @@
 import React from 'react';
-import "./SidePanel.css"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+import './SidePanel.css';
 
 const SidePanel = ({ className }) => {
-
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const Navigate = (value) => {
-        if(value === "About") {
-            navigate('/')
-        }
-        if(value === "Education") {
-            navigate('/education')
-        }
+        navigate(value);
     }
 
-    const content = (
-        <div className="SidePanel">
-            <div className="SidePanel-Button" onClick={() => Navigate("About")}>
+    return (
+        <div className={`SidePanel ${className}`}>
+            <div 
+                className={`SidePanel-Button ${location.pathname === "/" ? "selected" : ""}`} 
+                onClick={() => Navigate("/")}
+            >
                 ABOUT
             </div>
-            <div className="SidePanel-Button" onClick={() => Navigate("Education")}>
+            <div 
+                className={`SidePanel-Button ${location.pathname === "/education" ? "selected" : ""}`} 
+                onClick={() => Navigate("/education")}
+            >
                 EDUCATION
             </div>
-            <div className="SidePanel-Button">
+            <div 
+                className={`SidePanel-Button ${location.pathname === "/cv" ? "selected" : ""}`} 
+                onClick={() => Navigate("/cv")}
+            >
                 CV
             </div>
-            <div className="SidePanel-Button">
+            <div 
+                className={`SidePanel-Button ${location.pathname === "/projects" ? "selected" : ""}`} 
+                onClick={() => Navigate("/projects")}
+            >
                 PROJECTS
             </div>
         </div>
-    )
-
-    return (
-        <aside className={className}>
-            {content}
-        </aside>
     );
 }
 

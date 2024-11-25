@@ -13,7 +13,19 @@
     cursor: pointer;
 
     &:hover {
+        font-size: 2rem;
         color: #af1111;
+        text-shadow: 0 0 40px #ff0000;
+    }
+}
+
+.SidePanel-Button.selected {
+    font-size: 2.25rem;
+    color: #af1111;
+    text-shadow: 0 0 40px #ff0000;
+
+    &:hover {
+        color: #ffb9b9;
     }
 }
 

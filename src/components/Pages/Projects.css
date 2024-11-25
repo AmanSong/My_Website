@@ -1,0 +1,42 @@
+.Projects-Page {
+    color: white;
+}
+
+.Project-Description {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    background-color: rgba(240, 248, 255, 0.178);
+}
+
+.ScreenShots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+    background-color: rgba(240, 248, 255, 0.253);
+    padding: 1rem;
+    margin-top: 2.5rem;
+}
+
+.ScreenShots img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.Technologies {
+    background-color: rgba(65, 130, 250, 0.295);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.TechBubble {
+    background-color: rgba(26, 89, 206, 0.726);
+    padding: .5rem 1rem;
+    border-radius: 50px; 
+    color: white;
+    display: inline-block; 
+    text-align: center; 
+}
