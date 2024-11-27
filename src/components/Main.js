@@ -1,6 +1,20 @@
 import "./Main.css"
+import ImageModal from "./ImageModal"
+import { useState } from "react";
 
 const Main = () => {
+
+    const [selectedImage, setSelectedImage] = useState(null)
+    const [showModal, setShowModal] = useState(false)
+
+    const clickedImage = (image) => {
+        setSelectedImage(image)
+        setShowModal(true)
+    }
+
+    const modal = (
+        <ImageModal show={showModal} onClose={() => setShowModal(false)} image={selectedImage} />
+    )
 
     const aboutMe = (
         <div className="About-Me-Section">
@@ -15,7 +29,7 @@ const Main = () => {
 
                 <div style={{ marginTop: 1 + 'em' }}>
                     <p>
-                        Good morning, even or afternoon to whoever is reading this, My name is Wen Ting Song but many of my friends
+                        Good morning, evening or afternoon to whoever is reading this, My name is Wen Ting Song but many of my friends
                         call me Aman. So let me introduce myself a little, I am an aspiring Software Engineer that takes great interest
                         in all things internet and technology.
                     </p>
@@ -44,7 +58,7 @@ const Main = () => {
                     </div>
 
                     <div className="Images">
-                        <img id="MyPicture" src="Myself.jpg" alt="Me"></img>
+                        <img id="MyPicture" src={process.env.PUBLIC_URL + "/Myself.jpg"} alt="Me"></img>
                     </div>
                 </div>
 
@@ -62,9 +76,9 @@ const Main = () => {
                         </p>
 
                         <div className="Praha">
-                            <img className="PrahaImages" src="Praha1.jpg" alt="Me"></img>
-                            <img className="PrahaImages" src="Praha2.jpg" alt="Me"></img>
-                            <img className="PrahaImages" src="Praha3.jpg" alt="Me"></img>
+                            <img className="PrahaImages" onClick={() => clickedImage(process.env.PUBLIC_URL + "/Praha1.jpg")} src={process.env.PUBLIC_URL + "/Praha1.jpg"} alt="Praha1"></img>
+                            <img className="PrahaImages" onClick={() => clickedImage(process.env.PUBLIC_URL + "/Praha2.jpg")} src={process.env.PUBLIC_URL + "/Praha2.jpg"} alt="Praha2"></img>
+                            <img className="PrahaImages" onClick={() => clickedImage(process.env.PUBLIC_URL + "/Praha3.jpg")} src={process.env.PUBLIC_URL + "/Praha3.jpg"} alt="Praha3"></img>
                         </div>
 
                     </div>
@@ -78,6 +92,7 @@ const Main = () => {
         <div className="Main-Page">
             <div className="centered-div">
                 {aboutMe}
+                {modal}
             </div>
         </div>
     )

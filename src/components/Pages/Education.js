@@ -1,6 +1,21 @@
 import "./Education.css"
+import { useState } from "react"
+import ImageModal from "../ImageModal"
 
 const Education = () => {
+
+    const [selectedImage, setSelectedImage] = useState(null)
+    const [showModal, setShowModal] = useState(false)
+
+    const clickedImage = (image) => {
+        setSelectedImage(image)
+        setShowModal(true)
+    }
+
+    const modal = (
+        <ImageModal show={showModal} onClose={() => setShowModal(false)} image={selectedImage} />
+    )
+
     const content = (
         <div className="centered-div">
             <div className="About-Me-Section">
@@ -53,10 +68,10 @@ const Education = () => {
                     </div>
 
                     <div className="Graduation-Images">
-                        <img id="grad-image1" src="Self_Portrait.png" alt="MeInGown"/>
-                        <img src="grad-image1.jpg" alt="SelfieWithFriends"/>
-                        <img src="grad-image2.jpg" alt="MeInGown"/>
-                        <img id="grad-image2" src="grad-image3.jpg" alt="MeInGown"/>
+                        <img onClick={() => clickedImage("Self_Portrait.png")} id="grad-image1" src="Self_Portrait.png" alt="MeInGown"/>
+                        <img onClick={() => clickedImage("grad-image1.jpg")} src="grad-image1.jpg" alt="SelfieWithFriends"/>
+                        <img onClick={() => clickedImage("grad-image2.jpg")} src="grad-image2.jpg" alt="MeInGown"/>
+                        <img onClick={() => clickedImage("grad-image3.jpg")} id="grad-image2" src="grad-image3.jpg" alt="MeInGown"/>
                     </div>
                 </div>
             </div>
@@ -66,6 +81,7 @@ const Education = () => {
     return (
         <div className="Education-Page">
             {content}
+            {modal}
         </div>
     )
 }

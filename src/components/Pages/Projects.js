@@ -1,6 +1,20 @@
 import "./Projects.css"
+import { useState } from "react"
+import ImageModal from "../ImageModal"
 
 const Projects = () => {
+
+    const [selectedImage, setSelectedImage] = useState(null)
+    const [showModal, setShowModal] = useState(false)
+
+    const clickedImage = (image) => {
+        setSelectedImage(image)
+        setShowModal(true)
+    }
+
+    const modal = (
+        <ImageModal show={showModal} onClose={() => setShowModal(false)} image={selectedImage} />
+    )
 
     const FYP_Tech = (
         <div className="Technologies">
@@ -62,8 +76,8 @@ const Projects = () => {
                             </p>
 
                             <div className="ScreenShots">
-                                <img src="SH_LoginPage.png" alt="screenshot"></img>
-                                <img src="SH_Page.png" alt="screenshot"></img>
+                                <img onClick={() => clickedImage("SH_LoginPage.png")} src="SH_LoginPage.png" alt="screenshot"></img>
+                                <img onClick={() => clickedImage("SH_Page.png")} src="SH_Page.png" alt="screenshot"></img>
                             </div>
                         </p>
                     </div>
@@ -101,6 +115,7 @@ const Projects = () => {
     return (
         <div className="Projects-Page">
             {content}
+            {modal}
         </div>
     )
 }
