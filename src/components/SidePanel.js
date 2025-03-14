@@ -25,6 +25,12 @@ const SidePanel = ({ className }) => {
                 EDUCATION
             </div>
             <div 
+                className={`SidePanel-Button ${location.pathname === "/transcript" ? "selected" : ""}`} 
+                onClick={() => Navigate("/transcript")}
+            >
+                TRANSCRIPT
+            </div>
+            <div 
                 className={`SidePanel-Button ${location.pathname === "/cv" ? "selected" : ""}`} 
                 onClick={() => Navigate("/cv")}
             >

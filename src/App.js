@@ -5,6 +5,7 @@ import Main from './components/Main';
 import Education from './components/Pages/Education';
 import CV from './components/Pages/CV';
 import Projects from './components/Pages/Projects';
+import Transcript from './components/Pages/Transcript';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route index element={<Main />} />
             <Route path='/education' element={<Education />} />
             <Route path='/cv' element={<CV></CV>} />
+            <Route path='/transcript' element={<Transcript></Transcript>} />
             <Route path='/projects' element={<Projects></Projects>} />
           </Route>
         </Routes>
