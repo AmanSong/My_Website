@@ -58,7 +58,7 @@ const Main = () => {
                     </div>
 
                     <div className="Images">
-                        <img id="MyPicture" src={process.env.PUBLIC_URL + "/Myself.jpg"} alt="Me"></img>
+                        <img id="MyPicture" src={process.env.PUBLIC_URL + "/Images/Myself.jpg"} alt="Me"></img>
                     </div>
                 </div>
 
@@ -76,9 +76,9 @@ const Main = () => {
                         </p>
 
                         <div className="Praha">
-                            <img className="PrahaImages" onClick={() => clickedImage(process.env.PUBLIC_URL + "/Praha1.jpg")} src={process.env.PUBLIC_URL + "/Praha1.jpg"} alt="Praha1"></img>
-                            <img className="PrahaImages" onClick={() => clickedImage(process.env.PUBLIC_URL + "/Praha2.jpg")} src={process.env.PUBLIC_URL + "/Praha2.jpg"} alt="Praha2"></img>
-                            <img className="PrahaImages" onClick={() => clickedImage(process.env.PUBLIC_URL + "/Praha3.jpg")} src={process.env.PUBLIC_URL + "/Praha3.jpg"} alt="Praha3"></img>
+                            <img className="PrahaImages" onClick={() => clickedImage(process.env.PUBLIC_URL + "/Images/Praha1.jpg")} src={process.env.PUBLIC_URL + "/Images/Praha1.jpg"} alt="Praha1"></img>
+                            <img className="PrahaImages" onClick={() => clickedImage(process.env.PUBLIC_URL + "/Images/Praha2.jpg")} src={process.env.PUBLIC_URL + "/Images/Praha2.jpg"} alt="Praha2"></img>
+                            <img className="PrahaImages" onClick={() => clickedImage(process.env.PUBLIC_URL + "/Images/Praha3.jpg")} src={process.env.PUBLIC_URL + "/Images/Praha3.jpg"} alt="Praha3"></img>
                         </div>
 
                     </div>

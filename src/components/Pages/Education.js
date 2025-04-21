@@ -68,10 +68,10 @@ const Education = () => {
                     </div>
 
                     <div className="Graduation-Images">
-                        <img onClick={() => clickedImage("Self_Portrait.png")} id="grad-image1" src="Self_Portrait.png" alt="MeInGown"/>
-                        <img onClick={() => clickedImage("grad-image1.jpg")} src="grad-image1.jpg" alt="SelfieWithFriends"/>
-                        <img onClick={() => clickedImage("grad-image2.jpg")} src="grad-image2.jpg" alt="MeInGown"/>
-                        <img onClick={() => clickedImage("grad-image3.jpg")} id="grad-image2" src="grad-image3.jpg" alt="MeInGown"/>
+                        <img onClick={() => clickedImage("Images/Self_Portrait.png")} id="grad-image1" src="Images/Self_Portrait.png" alt="MeInGown"/>
+                        <img onClick={() => clickedImage("Images/grad-image1.jpg")} src="Images/grad-image1.jpg" alt="SelfieWithFriends"/>
+                        <img onClick={() => clickedImage("Images/grad-image2.jpg")} src="Images/grad-image2.jpg" alt="MeInGown"/>
+                        <img onClick={() => clickedImage("Images/grad-image3.jpg")} id="grad-image2" src="Images/grad-image3.jpg" alt="MeInGown"/>
                     </div>
                 </div>
             </div>

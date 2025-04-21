@@ -15,7 +15,6 @@ const Transcript = () => {
 
     return (
         <>
-        hi
             {content}
         </>
     )
